@@ -1,0 +1,19 @@
+<%= form_for @user, :html => { :multipart => true } do |f| %>
+
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :email %><br />
+    <%= f.text_field :email %>
+  </div>
+  <p>
+     <b> attachment </b><br/>
+      <%= f.file_field :attach %>
+  </p>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
