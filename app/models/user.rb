@@ -5,8 +5,8 @@ class User < ActiveRecord::Base
     validates :email, :presence => true
 
     has_attached_file :attach,
-   		 :url  => "/db/users/:id/:basename.:extension",
-         :path => ":rails_root/db/users/:id/:basename.:extension"
+   		 :url  => "/db/usertable/:id/:basename.:extension",
+         :path => ":rails_root/db/usertable/:id/:basename.:extension"
 
 
 
